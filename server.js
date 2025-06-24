@@ -120,8 +120,7 @@ app.post('/create-payment', async (req, res) => {
 // Serve static files from the React app
 app.use(express.static(path.resolve(__dirname, 'build')));
 
-// For any route not handled by your API, serve index.html
-app.get('*', (req, res) => {
+app.get('/*path', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'build', 'index.html'), (err) => {
     if (err) {
       console.error(err);
