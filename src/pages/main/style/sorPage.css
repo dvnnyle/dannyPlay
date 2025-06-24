@@ -1,0 +1,22 @@
+.sor-cards-container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  min-height: 0;
+}
+
+.sor-content-card {
+  width: 100%;
+  max-width: calc(100% - 24px); /* full width minus 12px gap on each side */
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

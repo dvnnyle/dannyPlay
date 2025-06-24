@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body, h1, h2, h3, h4, h5, h6, p, label, input, button, span, div {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 120px;
+}
+
+
+.rectangle {
+  width: 100vw;
+  min-height: 80px;
+  height: auto;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  z-index: 9999;
+
+  /* Center content horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.pagetitle {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 700;
+  
+}
+
+
+.content-card {
+  width: 100%; /* full width */
+  max-width: calc(100vw - 24px); /* ensures 12px gap on both sides */
+  padding: 12px;       /* ensures 12px gap on all sides inside card */
+  box-sizing: border-box;   /* include padding in width */
+  background-color: #fff;
+  border-radius: 20px;
+  color: #333;
+  
+
+  margin: 12px auto 12px;  
+  text-align: center;
+
+}
+.title-row {
+  display: flex;
+  align-items: baseline; /* aligns text nicely on baseline */
+  gap: 12px;             /* space between title and subtitle */
+    margin-left: 8px; /* push row right by 10px */
+
+}
+
+.cardtitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.cardsubtitle {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #666;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.7;
+  white-space: nowrap;  
+}
+
+
+
+.content-image {
+  max-width: 100%;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
