@@ -6,16 +6,18 @@ body {
 }
 
 .product-card {
-  background: #fff;
-  max-width: 370px;
-  width: calc(100% - 24px);
-  margin: 12px auto 0 auto;
-  border-radius: 18px;
-  box-shadow: none;
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  width: 100%; /* full width */
+  max-width: calc(100vw - 24px); /* ensures 12px gap on both sides */
+  padding: 12px;       /* ensures 12px gap on all sides inside card */
+  box-sizing: border-box;   /* include padding in width */
+  background-color: #fff;
+  border-radius: 20px;
+  color: #333;
+  
+
+  margin: 12px auto 12px;  
+  text-align: center;
+
 }
 
 .product-header {
@@ -116,22 +118,22 @@ body {
 }
 
 .product-list-item {
-  width: 100%;
+  width: calc(100% - 24px);
   max-width: 100%;
-  min-width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   background: #666;
   border-radius: 18px;
   box-shadow: none;
   margin-bottom: 14px;
-  padding: 18px 16px 14px 16px; /* tighter vertical, more horizontal padding */
+  padding: 18px 16px 14px 16px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   border: none;
   transition: box-shadow 0.18s;
   align-self: stretch;
-  gap: 12px; /* less gap between rows */
+  gap: 12px;
 }
 
 .product-list-row {

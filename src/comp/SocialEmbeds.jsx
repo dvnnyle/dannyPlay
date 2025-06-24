@@ -27,13 +27,13 @@ export default function SocialEmbeds() {
   }, []);
 
   return (
-    <div style={{ width: 'calc(100% - 24px)', maxWidth: 400, margin: '-12px auto 12px auto', borderRadius: 20, overflow: 'hidden' }}>
+    <div style={{ width: '100%', maxWidth: 'calc(100% - 24px)',  margin: '-12px auto 12px auto', borderRadius: 20, overflow: 'hidden' }}>
       <iframe
         title="Instagram Feed"
         src="https://www.instagram.com/playworld.kristiansand/embed"
         width="100%"
         height="454"
-        style={{ border: 0, borderRadius: 20, overflow: 'hidden', marginBottom: -12, opacity: igLoaded ? 1 : 0, transition: 'opacity 0.6s' }}
+        style={{ border: 0, borderRadius: 20, overflow: 'hidden', marginBottom: -12, marginTop: 12, width: '100%', opacity: igLoaded ? 1 : 0, transition: 'opacity 0.6s' }}
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
         loading="lazy"
         onLoad={() => setIgLoaded(true)}
