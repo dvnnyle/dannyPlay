@@ -35,14 +35,21 @@ export default function SorPage() {
           <img src={PWS} alt="PWS" className="content-image" />
         </div>
         <div className="content-card sor-content-card">
-          <h2 className="cardtitle">Card Title 2</h2>
-          <p className="cardsubtitle">This is a description for the second content card.</p>
+          <h2 className="cardtitle">bursdag</h2>
+          <p className="cardsubtitle">gopsp</p>
         </div>
         <div className="content-card sor-content-card">
-          <h2 className="cardtitle">Card Title 3</h2>
-          <p className="cardsubtitle">This is a description for the third content card.</p>
+          <h2 className="cardtitle">leke</h2>
+          <p className="cardsubtitle">poteter</p>
         </div>
       </div>
+
+      <div className="divider-with-text">
+        <hr className="divider-line" />
+        <span className="divider-text">SOSIALE MEDIER</span>
+        <hr className="divider-line" />
+      </div>
+
       {/* Instagram and TikTok profile embeds at the bottom */}
       <SocialEmbeds />
     </>
