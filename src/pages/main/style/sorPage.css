@@ -23,6 +23,14 @@
   text-align: center;
 }
 
+.sor-content-card .content-image {
+  width: 100%;
+  max-width: 100%;
+  min-height: 220px;
+  height: auto;
+  object-fit: cover;
+}
+
 .divider-with-text {
   display: flex;
   align-items: center;
@@ -46,5 +54,97 @@
 
   white-space: nowrap;
   letter-spacing: 0.01em;
+}
+
+.card-desc {
+  font-size: 16px;
+  color: #777777;
+  font-weight: 400;
+  margin: 8px 0 0 0;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.card-rectangle {
+  width: 100%;
+  min-height: 32px;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-rectangle-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 8PX;
+  padding-bottom: 8PX;
+}
+
+.bursdag-btn {
+  width: 100%;
+  margin: 12px auto;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #f7b733 0%, #fc4a1a 100%);
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cardtitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contact-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: #ff7e5f; /* Use your accent/gradient color or a modern highlight */
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.social-link {
+  color: #ff7e5f;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  width: 52px;
+  height: 52px;
+  box-sizing: border-box;
+  border: 2px solid #ff7e5f33;
+  text-decoration: none;
+  font-weight: 500;
+}
+.social-link svg {
+  width: 22px;
+  height: 22px;
 }
 
