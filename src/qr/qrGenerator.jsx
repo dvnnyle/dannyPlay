@@ -29,6 +29,7 @@ export default function QrGenerator() {
   });
 
   return (
+    
     <div className="qr-card">
       <div style={{
         background: '#f8f9fa',
