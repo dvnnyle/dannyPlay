@@ -4,26 +4,26 @@ import './styles/ProductPage.css';
 
 export default function ProductPage() {
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [addedToCart, setAddedToCart] = useState([]); // array of product ids
+  const [addedToCart, setAddedToCart] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const products = [
     {
       id: "sock123",
       name: "sokker",
-      price: 1000, // in øre, so 10 NOK
+      price: 1000,
       currency: "NOK",
     },
     {
       id: "hat456",
       name: "golf",
-      price: 2500, // 25 NOK
+      price: 2500,
       currency: "NOK",
     },
     {
       id: "mug789",
       name: "sokekr",
-      price: 1500, // 15 NOK
+      price: 1500,
       currency: "NOK",
     },
   ];
@@ -46,7 +46,7 @@ export default function ProductPage() {
       amountValue: total,
       phoneNumber,
       reference: `order-${Date.now()}`,
-      returnUrl: "http://localhost:3000/payment-return",
+      returnUrl: window.location.origin + "/payment",
       paymentDescription: `Order: ${addedToCart.map(id => products.find(p => p.id === id)?.name).join(", ")}`,
     };
     try {
@@ -90,7 +90,6 @@ export default function ProductPage() {
           ))}
         </div>
       </div>
-      {/* Order Summary in its own card */}
       <div className="product-card order-summary-card">
         <h3 className="order-summary-title">Ordresammendrag</h3>
         <ul className="order-summary-list">
@@ -115,7 +114,6 @@ export default function ProductPage() {
             </span>
           </div>
         )}
-        {/* Phone number input and pay button at the bottom */}
         {addedToCart.length > 0 && (
           <>
             <div className="product-input-group">

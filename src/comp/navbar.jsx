@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaBoxOpen, FaUser, FaNewspaper } from "react-icons/fa";
+import { FaHome, FaBoxOpen, FaUser, FaNewspaper, FaQrcode } from "react-icons/fa";
 
 const styles = {
   navbar: {
@@ -62,6 +62,18 @@ const CustomNavbar = () => {
         aria-label="Products"
       >
         <FaBoxOpen />
+      </NavLink>
+
+      <NavLink
+        to="/qr"
+        style={({ isActive }) =>
+          isActive
+            ? { ...styles.link, ...styles.activeLink }
+            : styles.link
+        }
+        aria-label="QR Code Generator"
+      >
+        <FaQrcode />
       </NavLink>
 
       <NavLink
